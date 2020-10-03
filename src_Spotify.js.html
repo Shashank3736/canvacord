@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Source: src/Spotify.js</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/nav.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="styles/skyceil.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="utilities">
+        <center>
+            <button class="theme" data-theme="light">🌙 Turn off the lights</button>
+        </center>
+    </div>
+    <hr>
+    <h4><a href="index.html">Home</a></h4><h5 class="no-bottom must-underline">Classes</h5><ul><li><span class="small-icon C">C</span><b><a href="Canvacord.html">Canvacord</a></b><ul class="has-class-methods"><li><span class="small-icon F">F</span><a href="Canvacord.html#.affect">affect</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.batslap">batslap</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.beautiful">beautiful</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.bed">bed</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.blur">blur</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.brightness">brightness</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.burn">burn</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.changemymind">changemymind</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.circle">circle</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.clyde">clyde</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.color">color</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.colorfy">colorfy</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.convolute">convolute</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.createProgressBar">createProgressBar</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.darkness">darkness</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.delete">delete</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.distracted">distracted</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.facepalm">facepalm</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.fuse">fuse</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.gay">gay</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.gradient">gradient</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.greyscale">greyscale</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.guildIcon">guildIcon</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.hitler">hitler</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.invert">invert</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.jail">jail</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.jokeOverHead">jokeOverHead</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.kiss">kiss</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.ohno">ohno</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.opinion">opinion</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.phub">phub</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.pixelate">pixelate</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.quote">quote</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.rainbow">rainbow</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.rectangle">rectangle</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.registerFonts">registerFonts</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.resize">resize</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.rip">rip</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.sepia">sepia</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.sharpen">sharpen</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.slap">slap</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.spank">spank</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.threshold">threshold</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.tictactoe">tictactoe</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.trash">trash</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.trigger">trigger</a></li><li><span class="small-icon F">F</span><a href="Canvacord.html#.write">write</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.CaptchaGen">CaptchaGen</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.FortniteShop">FortniteShop</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.FortniteStats">FortniteStats</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.Leaver">Leaver</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.Rank">Rank</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.Spotify">Spotify</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.Util">Util</a></li><li><span class="small-icon M">M</span><a href="Canvacord.html#.Welcomer">Welcomer</a></li></ul></li><li><span class="small-icon C">C</span><b><a href="Leaver.html">Leaver</a></b><ul class="has-class-methods"><li><span class="small-icon F">F</span><a href="Leaver.html#build">build</a></li><li><span class="small-icon F">F</span><a href="Leaver.html#setColor">setColor</a></li><li><span class="small-icon F">F</span><a href="Leaver.html#setMemberCount">setMemberCount</a></li></ul></li><li><span class="small-icon C">C</span><b><a href="Rank.html">Rank</a></b><ul class="has-class-methods"><li><span class="small-icon F">F</span><a href="Rank.html#build">build</a></li><li><span class="small-icon F">F</span><a href="Rank.html#registerFonts">registerFonts</a></li><li><span class="small-icon F">F</span><a href="Rank.html#renderEmojis">renderEmojis</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setAvatar">setAvatar</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setBackground">setBackground</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setCurrentXP">setCurrentXP</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setDiscriminator">setDiscriminator</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setLevel">setLevel</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setOverlay">setOverlay</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setProgressBar">setProgressBar</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setProgressBarTrack">setProgressBarTrack</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setRank">setRank</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setRequiredXP">setRequiredXP</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setStatus">setStatus</a></li><li><span class="small-icon F">F</span><a href="Rank.html#setUsername">setUsername</a></li><li><span class="small-icon M">M</span><a href="Rank.html#data">data</a></li></ul></li><li><span class="small-icon C">C</span><b><a href="Spotify.html">Spotify</a></b><ul class="has-class-methods"><li><span class="small-icon F">F</span><a href="Spotify.html#build">build</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setAlbum">setAlbum</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setAuthor">setAuthor</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setBackground">setBackground</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setEndTimestamp">setEndTimestamp</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setImage">setImage</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setProgressBar">setProgressBar</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setStartTimestamp">setStartTimestamp</a></li><li><span class="small-icon F">F</span><a href="Spotify.html#setTitle">setTitle</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#album">album</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#artist">artist</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#background">background</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#end">end</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#image">image</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#progressBar">progressBar</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#start">start</a></li><li><span class="small-icon M">M</span><a href="Spotify.html#title">title</a></li></ul></li><li><span class="small-icon C">C</span><b><a href="Util.html">Util</a></b><ul class="has-class-methods"><li><span class="small-icon F">F</span><a href="Util.html#.discordTime">discordTime</a></li><li><span class="small-icon F">F</span><a href="Util.html#.formatHex">formatHex</a></li><li><span class="small-icon F">F</span><a href="Util.html#.formatTime">formatTime</a></li><li><span class="small-icon F">F</span><a href="Util.html#.getAcronym">getAcronym</a></li><li><span class="small-icon F">F</span><a href="Util.html#.getLines">getLines</a></li><li><span class="small-icon F">F</span><a href="Util.html#.invertColor">invertColor</a></li><li><span class="small-icon F">F</span><a href="Util.html#.renderEmoji">renderEmoji</a></li><li><span class="small-icon F">F</span><a href="Util.html#.shorten">shorten</a></li><li><span class="small-icon F">F</span><a href="Util.html#.toAbbrev">toAbbrev</a></li></ul></li><li><span class="small-icon C">C</span><b><a href="Welcomer.html">Welcomer</a></b><ul class="has-class-methods"><li><span class="small-icon F">F</span><a href="Welcomer.html#build">build</a></li><li><span class="small-icon F">F</span><a href="Welcomer.html#setColor">setColor</a></li><li><span class="small-icon F">F</span><a href="Welcomer.html#setMemberCount">setMemberCount</a></li></ul></li></ul><h4><a href="global.html">Global</a></h4>
+</nav>
+
+<div id="main">
+    <div class="burger">
+        <div class="burger-line-1"></div>
+        <div class="burger-line-2"></div>
+        <div class="burger-line-3"></div>
+    </div>
+
+    <h1 class="page-title">Source: src/Spotify.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const Canvas = require("canvas");
+const Util = require("../plugins/Util");
+const assets = require("./Assets");
+
+/**
+ * Spotify presence card builder
+ */
+class Spotify {
+
+    /**
+     * Creates spotify presence card
+     * @example
+     * const card = new canvacord.Spotify()
+        .setAuthor("Indila")
+        .setAlbum("Mini World")
+        .setStartTimestamp(Date.now() - 10000)
+        .setEndTimestamp(Date.now() + 50000)
+        .setImage("https://is5-ssl.mzstatic.com/image/thumb/Features111/v4/a4/89/a1/a489a1cb-4543-6861-a276-4470d41d6a90/mzl.zcdmhnlk.jpg/800x800bb.jpeg")
+        .setTitle("S.O.S");
+
+    card.build()
+        .then(data => {
+            canvacord.write(data, "./images/spotify.png");
+        });
+     */
+    constructor() {
+
+        /**
+         * Song title
+         * @type {string}
+         */
+        this.title = null;
+
+        /**
+         * Thumbnail
+         * @type {string|Buffer|Canvas.Image}
+         */
+        this.image = null;
+
+        /**
+         * Song artist
+         * @type {string}
+         */
+        this.artist = null;
+
+        /**
+         * Spotify album name
+         * @type {string}
+         */
+        this.album = null;
+
+        /**
+         * Discord presence started timestamp
+         * @type {number}
+         */
+        this.start = null;
+
+        /**
+         * Discord presence ending timestamp
+         * @type {number}
+         */
+        this.end = null;
+
+        /**
+         * Background
+         */
+        this.background = {
+            type: 0,
+            data: "#2F3136"
+        };
+
+        /**
+         * Progressbar details
+         */
+        this.progressBar = {
+            bgColor: "#E8E8E8",
+            color: "#1DB954"
+        };
+
+        this.__registerFonts();
+    }
+
+    /**
+     * Register fonts
+     * @ignore
+     * @private
+     */
+    __registerFonts() {
+        setTimeout(() => {
+            Canvas.registerFont(assets("FONT").MANROPE_REGULAR, {
+                family: "Manrope",
+                weight: "regular",
+                style: "normal"
+            });
+
+            Canvas.registerFont(assets("FONT").MANROPE_BOLD, {
+                family: "Manrope",
+                weight: "bold",
+                style: "normal"
+            });
+        }, 250);
+    }
+
+    /**
+     * Set progressbar details
+     * @param {"TRACK"|"BAR"} type Progressbar type
+     * @param {string} color Color to set
+     */
+    setProgressBar(type, color) {
+        switch(type) {
+
+            case "BAR":
+                this.progressBar.color = color &amp;&amp; typeof color === "string" ? color : "#1DB954";
+                break;
+            case "TRACK":
+                this.progressBar.bgColor = color &amp;&amp; typeof color === "string" ? color : "#E8E8E8";
+                break;
+            default:
+                throw new Error(`Invalid progressbar type "${type}"!`);
+        }
+
+        return this;
+    }
+
+    /**
+     * Set title
+     * @param {string} title Title to set
+     */
+    setTitle(title) {
+        if (!title || typeof title !== "string") throw new Error(`Expected title, received ${typeof title}!`);
+        this.title = title;
+        return this;
+    }
+
+    /**
+     * Set image
+     * @param {string|Buffer|Canvas.Image} source Image source
+     */
+    setImage(source) {
+        if (!source) throw new Error(`Expected image source, received ${typeof title}!`);
+        this.image = source;
+        return this;
+    }
+
+    /**
+     * Set artist name
+     * @param {string} name Artist name
+     */
+    setAuthor(name) {
+        if (!name || typeof name !== "string") throw new Error(`Expected artist name, received ${typeof name}!`);
+        this.artist = name;
+        return this;
+    }
+
+    /**
+     * Set album name
+     * @param {string} name Album name
+     */
+    setAlbum(name) {
+        if (!name || typeof name !== "string") throw new Error(`Expected album name, received ${typeof name}!`);
+        this.album = name;
+        return this;
+    }
+
+    /**
+     * Set start timestamp
+     * @param {Date|number} time Timestamp
+     */
+    setStartTimestamp(time) {
+        if (!time) throw new Error(`Expected timestamp, received ${typeof time}!`);
+        if (time instanceof Date) time = time.getTime();
+        this.start = time;
+        return this;
+    }
+
+    /**
+     * Set end timestamp
+     * @param {Date|number} time Timestamp
+     */
+    setEndTimestamp(time) {
+        if (!time) throw new Error(`Expected timestamp, received ${typeof time}!`);
+        if (time instanceof Date) time = time.getTime();
+        this.end = time;
+        return this;
+    }
+
+    /**
+     * Set background
+     * @param {"COLOR"|"IMAGE"} type Background type
+     * @param {string|Buffer|Canvas.Image} data Background data
+     */
+    setBackground(type = "COLOR", data = "#2F3136") {
+        switch(type) {
+            case "COLOR":
+                this.background.type = 0;
+                this.background.data = data &amp;&amp; typeof data === "string" ? data : "#2F3136";
+            break;
+            case "IMAGE":
+                if (!data) throw new Error("Missing background data!");
+                this.background.type = 1;
+                this.background.data = data;
+            break;
+            default:
+                throw new Error(`Invalid background type "${type}"!`);
+        }
+
+        return this;
+    }
+
+    /**
+     * This function converts raw data into spotify presence card.
+     * @returns {Promise&lt;Buffer>}
+     */
+    async build() {
+        if (!this.title) throw new Error('Missing "title" in options.');
+        if (!this.artist) throw new Error('Missing "artist" in options.');
+        if (!this.start) throw new Error('Missing "start" in options.');
+        if (!this.end) throw new Error('Missing "end" in options.');
+
+        const total = this.end - this.start;
+        const progress = Date.now() - this.start;
+        const progressF = Util.formatTime(progress > total ? total : progress);
+        const ending = Util.formatTime(total);
+
+        const canvas = Canvas.createCanvas(600, 150);
+        const ctx = canvas.getContext("2d");
+
+        // background
+        ctx.beginPath();
+        if (this.background.type === 0) {
+            ctx.rect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = this.background.data || "#2F3136";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        } else {
+            let img = await Canvas.loadImage(this.background.data);
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        }
+
+        // draw image
+        const img = await Canvas.loadImage(this.image);
+        ctx.drawImage(img, 30, 15, 120, 120);
+
+        // draw songname
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "bold 20px Manrope";
+        await Util.renderEmoji(ctx, Util.shorten(this.title, 30), 170, 40);
+
+        // draw artist name
+        ctx.fillStyle = "#F1F1F1";
+        ctx.font = "14px Manrope";
+        await Util.renderEmoji(ctx, `by ${Util.shorten(this.artist, 40)}`, 170, 70);
+
+        // add album
+        if (this.album &amp;&amp; typeof this.album === "string") {
+            ctx.fillStyle = "#F1F1F1";
+            ctx.font = "14px Manrope";
+            await Util.renderEmoji(ctx, `on ${Util.shorten(this.album, 40)}`, 170, 90);
+        }
+
+        // ending point
+        ctx.fillStyle = "#B3B3B3";
+        ctx.font = "14px Manrope";
+        await Util.renderEmoji(ctx, ending, 430, 130);
+
+        // progress
+        ctx.fillStyle = "#B3B3B3";
+        ctx.font = "14px Manrope";
+        await Util.renderEmoji(ctx, progressF, 170, 130);
+
+        // progressbar track
+        ctx.rect(170, 170, 300, 4);
+        ctx.fillStyle = "#E8E8E8";
+        ctx.fillRect(170, 110, 300, 4);
+
+        // progressbar
+        ctx.fillStyle = "#1DB954";
+        ctx.fillRect(170, 110, this.__calculateProgress(progress, total), 4);
+
+        // return
+        return canvas.toBuffer();
+    }
+
+    /**
+     * Returns progress
+     * @private
+     * @ignore
+     */
+    __calculateProgress(progress, total) {
+        let prg = (progress / total) * 300;
+        if (isNaN(prg) || prg &lt; 0) return 0;
+        if (prg > 300) return 300;
+        return prg;
+    }
+
+}
+
+module.exports = Spotify;</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sat Oct 03 2020 12:51:36 GMT+0545 (Nepal Time) using <a href="https://github.com/zyrouge/jsdoc-skyceil">Skyceil Theme</a>
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+</body>
+</html>
